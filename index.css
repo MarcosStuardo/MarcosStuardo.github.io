@@ -1,0 +1,19 @@
+h1 {
+  letter-spacing: 8px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+#jumboOne{
+  background-image: url(https://i1.sndcdn.com/artworks-000200489044-pi4ete-t500x500.jpg);
+  background-size: auto;
+  height: 30%;
+  margin-bottom: 0px;
+}
+#jumboContact{
+  background-image: url(https://i1.sndcdn.com/artworks-000246807058-fjabbw-t500x500.jpg);
+  background-size: cover;
+  height: 30%;
+  margin-bottom: 0px;
+}
