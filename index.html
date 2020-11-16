@@ -32,22 +32,9 @@
     }
     </style>
 
-    <script type="text/javascript">
-    var one = document.getElementById("bio");
-
-    function bioMore() {
-      one.textContent = ("READ");
-    }
-    function bioMoreOriginal() {
-      one.textContent = ("BIO");
-    }
-    one.addEventListener('mouseover', bioMore);
-    one.addEventListener('mouseout', bioMoreOriginal);
-    </script>
-
     <title>Marcos Stuardo, Composer</title>
   </head>
-  
+
     <body>
       <div id="barra" class="">
         <nav class="navbar navbar-expand-lg bg-light">
@@ -58,6 +45,18 @@
                       <a href="file:///C:/Users/stuar/Desktop/Mis%20Cosas/myWebpage/modelContact.html" class="text-dark">CONCTACT</a>
                       <a href="https://soundcloud.com/stuardo" class="text-dark">MUSIC<span class="sr-only"></a>
               </div>
+              <script type="text/javascript">
+              var one = document.getElementById("bio");
+
+              function bioMore() {
+                one.textContent = ("READ");
+              }
+              function bioMoreOriginal() {
+                one.textContent = ("BIO");
+              }
+              one.addEventListener('mouseover', bioMore);
+              one.addEventListener('mouseout', bioMoreOriginal);
+              </script>
           </nav>
         </div>
         <div id="jumboOne" class="jumbotron jumbotron-fluid bg-dark">
