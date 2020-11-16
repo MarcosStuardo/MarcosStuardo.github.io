@@ -26,7 +26,7 @@
     }
     #jumboContact{
       background-image: url(https://i1.sndcdn.com/artworks-000246807058-fjabbw-t500x500.jpg);
-      background-size: cover;
+      background-size: auto;
       height: 30%;
       margin-bottom: 0px;
     }
@@ -45,19 +45,7 @@
                       <a href="file:///C:/Users/stuar/Desktop/Mis%20Cosas/myWebpage/modelContact.html" class="text-dark">CONCTACT</a>
                       <a href="https://soundcloud.com/stuardo" class="text-dark">MUSIC<span class="sr-only"></a>
               </div>
-              <script type="text/javascript">
-              var one = document.getElementById("bio");
-
-              function bioMore() {
-                one.textContent = ("READ");
-              }
-              function bioMoreOriginal() {
-                one.textContent = ("BIO");
-              }
-              one.addEventListener('mouseover', bioMore);
-              one.addEventListener('mouseout', bioMoreOriginal);
-              </script>
-          </nav>
+            </nav>
         </div>
         <div id="jumboOne" class="jumbotron jumbotron-fluid bg-dark">
         </div>
@@ -91,7 +79,17 @@
               </div>
             </div>
           </div>
-
+          <script type="text/javascript">
+          var one = document.getElementById("bio");
+          function bioMore() {
+            one.textContent = ("Read More");
+            }
+          function bioMoreOriginal() {
+            one.textContent = ("BIO");
+            }
+          one.addEventListener("mouseover", bioMore);
+          one.addEventListener("mouseout", bioMoreOriginal);
+          </script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         </body>
