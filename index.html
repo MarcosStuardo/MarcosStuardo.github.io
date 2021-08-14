@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Capstone Google Data Analytics Project</title>
+    <style>
+      body {background-color: gainsboro;}
+      h1   {color: black;}
+      p    {color: black;}
+    </style>
+    <style>
+    footer {
+      text-align: center;
+      padding: 3px;
+      background-color: gainsboro;
+    }
+    </style>
+</head>
+  </head>
+  <body>
+    <div class="container">
+
+        <div class= "mx-auto" style="width: 700px;">
+
+          <h1>About this project</h1>
+          <p>This project analyses publicly available data regarding projects and activities executed in the Czech Republic with
+            the aim to foster social integration.</p>
+
+          <h1>About the dataset</h1>
+          <p>The data has been collected by the <a href="https://www.migrace.com/en/" target="_blank">Association for Integration and Migration
+            (Sdružení pro integraci a migraci)</a> and
+            registers projects of social integration financially supported by public and private sources. The raw data has been
+            retrieved from the Association for Integration and Migration website and can be accessed
+            <a href="https://www.migrace.com/cs/regularizace/mesta-a-inkluzivni-strategie/databaze" target="_blank">here</a>.</p>
+          <p>According to the Association’s website (in Czech), in order to increase the information’s validity and completeness,
+            a combination of sources and methodologies have been used in the compilation process:</p>
+          <li>Mapping websites from public and private donors from an international and local level that support activities for the
+            integration of migrants in the Czech Republic.</li>
+          <li>Analysing website content and annual reports from integration activities organisers, usually based in the Czech
+            Republic with a prevailing involvement in the area of migration and migrant integration.</li>
+          <li>Searching in central endowments and grants online files and repositories at the European and Czech levels.</li>
+          <br>
+          <p>The data, contained in an Excel spreadsheet, is made of 11 columns and 5870 rows. It contains information on projects started in 1999 to 2020.</p>
+          <p>The main focus of this analysis is the relationship between the number of projects funded, the number of funding institutions (donors),
+            and the number of institutions benefiting from the donations. The database does not contain information about sums.</p>
+          <p>Feel free to check the spreadsheet I used for this analysis <a href="https://docs.google.com/spreadsheets/d/1IrLtGGfLTEQRBc7Lb0LihNKTBrLWqZdf/edit?usp=sharing&ouid=109280528232733088389&rtpof=true&sd=true" target="_blank">here (Google Drive)</a>.</p>
+          <p>Also, do not hesitate to get back to me should you have any comments or questions. Contact information is available at the end of this document</p>
+
+        <h1>Projects and Donors</h1>
+        <p>For this analysis, I only considered projects whose date of commencement sparks between January 2015 to July 2020.
+          From this, we learn that, in the analysed period, the total number of projects funded was 2976 and the number of donors
+          ascended to 73. It is also observed that the top 5 donors funded 83% of the total and that the Ministry of Education,
+          Youth and Sport of the Czech Republic is by far the largest contributor with 42% of the total.</p>
+
+
+        <br>
+
+      <div class='tableauPlaceholder' id='viz1628897582225' style='position: absolute'><noscript><a href='#'><img alt='Top 5 Donors ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cz&#47;CzechSoc&#47;Top5Donors&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CzechSoc&#47;Top5Donors' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cz&#47;CzechSoc&#47;Top5Donors&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1628897582225');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      <br>
+      <br>
+          <div class="table-responsive">
+            <strong><caption>Projects funded by Top 5 Donors from January 2015 to July 2020</caption></strong>
+              <table class="table table-bordered table-hover table-dark">
+                <tbody>
+                  <tr>
+                    <td>Total projects funded since 2015</td>
+                    <td>2976</td>
+                  </tr>
+                  <tr>
+                    <td>Total projects funded by Top 5 donors</td>
+                    <td>2475</td>
+                  </tr>
+                  <tr>
+                    <td>Number of donors</td>
+                    <td>73</td>
+                  </tr>
+                  <tr>
+                    <td>Percentage of projects funded by Top 5 Donors</td>
+                    <td>83%</td>
+                  </tr>
+                  <tr>
+                    <td>Percentage of projects funded by the main donor</td>
+                    <td>42%</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+
+          <div class="table-responsive">
+            <strong><caption>Top 5 Donors</caption></strong>
+              <table class="table table-bordered table-hover table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Donor</th>
+                    <th scope="col">Projects Funded</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ministry of Education, Youth and Sport</td>
+                    <td>1260</td>
+                  </tr>
+                  <tr>
+                    <td>European Union</td>
+                    <td>589</td>
+                  </tr>
+                  <tr>
+                    <td>City of Prague</td>
+                    <td>251</td>
+                  </tr>
+                  <tr>
+                    <td>Ministry of Interior</td>
+                    <td>236</td>
+                  </tr>
+                  <tr>
+                    <td>Ministry of Work and Social Affairs</td>
+                    <td>139</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+
+        <br>
+        <p>Other important donors are the Ministry of Culture and the European Commission.</p>
+
+        <h1>Recipients</h1>
+        <p>When considering the institutions favoured with funds, there seems to be a concentration in terms of the number of projects per institution. On average,
+          the number of projects per institution is 2.49, with 21% of the organisations receiving funding for only one project. The top 5 most favoured institutions
+          received funds for 8% of the projects and boast an average of 49.4 projects per organisation. The table below shows the top 5 recipients.</p>
+
+          <div class="table-responsive">
+            <strong><caption>Top 5 Recipients</caption></strong>
+              <table class="table table-bordered table-hover table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Recipient</th>
+                    <th scope="col">Projects Funded</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Organizace pro pomoc uprchlíkům, z.s.</td>
+                    <td>61</td>
+                  </tr>
+                  <tr>
+                    <td>InBáze, z.s. (Občanské sdružení Berkat)</td>
+                    <td>60</td>
+                  </tr>
+                  <tr>
+                    <td>Poradna pro integraci, z. ú.</td>
+                    <td>45</td>
+                  </tr>
+                  <tr>
+                    <td>Centrum pro integraci cizinců, o.p.s.</td>
+                    <td>43</td>
+                  </tr>
+                  <tr>
+                    <td>Diecézní katolická charita Hradec Králové</td>
+                    <td>38</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+
+        <br>
+
+        <h1>Focus on the main donor (Ministry of Education, Youth and Sport)</h1>
+        <p>In the period analysed, the main donor, the Ministry of Education, Youth and Sport (Ministerstvo školství,
+          mládeže a tělovýchovy České republiky) funded 1260 projects. The organisation receiving more donations from the
+          Ministry was <strong>InBáze, z.s. (Občanské sdružení Berkat)</strong>, which ranks second in the top 5 most favoured institutions
+          and which received funding for 11 projects from the Ministry. The average organisation received funding for 2.12 projects.</p>
+
+        <h1>Focus on the main recipients</h1>
+        <p>Who is funding the main recipients?</p>
+        <p>In the case of Organizace pro pomoc uprchlíkům, the main donor is the Ministry of Work and Social Affairs with 25 projects,
+          followed by the European Union with 16.</p>
+        <p>The following table shows the top 5 recipients and their main donors.</p>
+
+        <div class="table-responsive">
+          <strong><caption> Top 5 recipients and their main donors</caption></strong>
+            <table class="table table-bordered table-hover table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">Recipient</th>
+                  <th scope="col">Main Donor</th>
+                  <th scope="col">Projects Funded</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Organizace pro pomoc uprchlíkům, z.s.</td>
+                  <td>Ministry of Work and Social Affairs</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>InBáze, z.s. (Občanské sdružení Berkat)</td>
+                  <td>Prague City</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>Poradna pro integraci, z. ú.</td>
+                  <td>Ministry of Work and Social Affairs</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>Centrum pro integraci cizinců, o.p.s.</td>
+                  <td>Ministry of Interior</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>Diecézní katolická charita Hradec Králové</td>
+                  <td>Královéhradecký kraj</td>
+                  <td>15</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <br>
+        <p>The following graphs show a comparison between the different donors organised by recipients.</p>
+
+        <div class='tableauPlaceholder' id='viz1628903732408' style='position: absolute'><noscript><a href='#'><img alt='Organizace pro pomo ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cz&#47;CzechSoc&#47;Organizacepropomo&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CzechSoc&#47;Organizacepropomo' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cz&#47;CzechSoc&#47;Organizacepropomo&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1628903732408');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+        <br>
+        <br>
+
+        <div class='tableauPlaceholder' id='viz1628903923924' style='position: absolute'><noscript><a href='#'><img alt='InBaz ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cz&#47;CzechSoc&#47;InBaz&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CzechSoc&#47;InBaz' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cz&#47;CzechSoc&#47;InBaz&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1628903923924');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+        <br>
+        <br>
+
+        <div class='tableauPlaceholder' id='viz1628904044139' style='position: absolute'><noscript><a href='#'><img alt='Poradna ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cz&#47;CzechSoc&#47;Poradna&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CzechSoc&#47;Poradna' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cz&#47;CzechSoc&#47;Poradna&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1628904044139');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+        <br>
+        <br>
+
+        <div class='tableauPlaceholder' id='viz1628904228484' style='position: absolute'><noscript><a href='#'><img alt='Centrum pro ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cz&#47;CzechSoc&#47;Centrumpro&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CzechSoc&#47;Centrumpro' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cz&#47;CzechSoc&#47;Centrumpro&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1628904228484');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+        <br>
+        <br>
+
+        <div class='tableauPlaceholder' id='viz1628904405272' style='position: absolute'><noscript><a href='#'><img alt='Diecézní ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cz&#47;CzechSoc&#47;Dieczn&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CzechSoc&#47;Dieczn' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cz&#47;CzechSoc&#47;Dieczn&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1628904405272');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+        <br>
+        <br>
+
+          </div>
+
+      </div>
+
+      <footer>
+        <strong><p>Author: Dr Marcos Stuardo<br>
+        marcos@stuardo.art</p></strong>
+      </footer>
+
+      </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
